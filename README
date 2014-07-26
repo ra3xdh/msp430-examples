@@ -1,0 +1,14 @@
+Advanced examples for MSP430G2553 Launchpad:
+
+1. UART 9600 baud
+2. ADC oneshot single channel
+3. ADC repating single channel
+3. ADC repeating multichannel
+
+Примеры для отладочной платы Launchpad для MSP430G2553
+
+1. Аппаратный UART 9600 бод
+2. Одноканальный АЦП в однократном режиме
+3. Одноканальный АЦП в повторяющемся режиме с DMA.
+4. Моногоканальный АЦП в повторяющемся режиме с DMA.
+
