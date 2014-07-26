@@ -50,7 +50,8 @@ void uart_rx_isr(unsigned char c)
     case '2': P1OUT ^= LED_GREEN;
               uart_puts("Green led toggled\n");
               break;
-    default: break;
+    default:  uart_putc(c);
+              break;
     }
 }
  
@@ -77,7 +78,9 @@ int main(void)
     uart_puts("MSP430 harduart\n");
     uart_puts("***************\n");
 
-    for(;;);
+    __bis_SR_register(LPM0_bits+GIE); // Go to sleep
+
+    for(;;); // For debug
 
 }
 
