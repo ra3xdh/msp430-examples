@@ -87,7 +87,7 @@ int main(void)
 
     ADC_init_intref_multichannel((uint16_t *)adc,SAMPLES_CNT*CHANNELS_CNT); // Init ADC
 
-   // __bis_SR_register(LPM0_bits+GIE); // Go to sleep
+    __bis_SR_register(LPM0_bits+GIE); // Go to sleep
 
     for(;;); // For debug
 
